@@ -237,7 +237,6 @@ nav {
 .nav-links a:focus,
 .social:hover {
   color: orange;
-  font-size: 1.1rem;
 }
 
 
@@ -375,6 +374,44 @@ margin: 0;
 .activity-description {
   font-weight: bold;
   color: darkblue;
+}
+
+/*Transportation page***************************************************/
+.gettingTo {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 20px;
+  background-color: cyan;
+}
+
+.gettingAround {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  background-color: darkblue;
+}
+
+.gettingAround h2 {
+  color: white;
+}
+ 
+.transportPic {
+  height: 200px;
+  width: auto;
+}
+
+.gettingAround {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  background-color: darkblue;
+  color: white;
+  padding: 20px;
+}
+
+.transportPara {
+  color: white;
 }
 
 /*FAQ****************************************************/
@@ -530,5 +567,24 @@ footer {
     align-items: start;
     margin-left: 3.2rem;
   }
+
+  /*Transportation page***************************************************/
+.gettingTo {
+
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: lightcyan;
+  padding: 20px;
+}
+
+.gettingAround {
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.transportPic {
+  height: 200px;
+  width: auto;
+}
 
 }
