@@ -9,6 +9,11 @@ body {
   background-color: lightblue;
 }
 
+li {
+  list-style-type: none;
+  text-align: left;
+}
+
 /*icon and .top==========================================*/
 #top {
   display: flex;
@@ -158,6 +163,13 @@ img {
   object-fit: cover;
   border-radius: 8px;
 }
+
+/* .smallPicActivity {
+  width: 40%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 8px;
+} */
 
 /*NAVIGATION==========================================*/
 header {
@@ -314,8 +326,10 @@ h1 {
 .smallContainer {
   text-align: center;
 }
-#relative {
+.relative {
   position: relative;
+  bottom: 0;
+  margin-bottom: 0;
 }
 
 
@@ -328,8 +342,40 @@ footer {
   justify-content: space-between;
   gap: 10px;
   margin-top: 30px;
+  border: 6px solid darkblue;
 }
 
+/*Activity List****************************************************/
+.activity-list {
+  display: flex;
+  flex-direction: column;
+  /* align-items: center;
+  justify-content: center; */
+  gap: 2rem;
+  /* max-width: 600px;
+  margin: 0 auto; */
+}
+
+.activity-title {
+  font-size: 1.4rem;
+  font-weight: 800;
+  margin: 0.5rem 0 1rem;
+  color: #2a3a3f;
+}
+
+.activity-item ul {
+padding-left: 1.2rem;
+margin: 0;
+}
+
+.activity-item ul li {
+  margin-bottom: 0.3rem;
+}
+
+.activity-description {
+  font-weight: bold;
+  color: darkblue;
+}
 
 /*FAQ****************************************************/
 
@@ -360,7 +406,7 @@ h3.question {
   gap: 15px;
   max-width: 400px;
   margin: 20px auto;
-  border: solid 5px orange;
+  border: solid 5px darkblue;
   padding: 20px;
   border-radius: 8px; 
   scroll-margin-top: 80px;
@@ -475,6 +521,14 @@ footer {
 }
 
 
+/*ACTIVITY PAGE!!!!***************************************************/
 
+.activity-item {
+    display: grid;
+    grid-template-columns: 160px 220px 1fr;
+    gap: 1.5rem;
+    align-items: start;
+    margin-left: 3.2rem;
+  }
 
 }

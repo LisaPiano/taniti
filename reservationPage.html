@@ -67,41 +67,147 @@
     <div class="contact-form" id="contact-form">
         <h3 class="reservationTitle">Reservations</h3>
         <form action="thankyou.html" method="get" target="_blank" rel="noopener noreferrer">
-            <label for="name">Name:</label>
-            <input type="text" id="name" name="name" required><br><br>
 
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required><br><br>
 
-                <label for="numberOfAdults">Number of Adults:</label>
-                <input type="text" id="numberOfAdults" name="numberOfAdults" required><br><br>
 
-                 <label for="numberOfChildren">Number of Children:</label>
-                <input type="text" id="numberOfChildren" name="numberOfChildren" required><br><br>
 
-            <h3 class="reservationTitle">Hotel Type:</h3>
+        
 
-    <label>
+<!--ACTIVITIES ========================================================================================== -->
+<h3 class="reservationTitle">Reserve Activities:</h3>
+<p>Choose one or many of our varied activities while you enjoy your stay!</p>
+
+<h2 id="exploreAndRelax">Explore and Relax</h2>
+<label>
+    <input type="checkbox" name="beachResort" value="beachResort">
+    Beach Resort
+</label><br><br>
+
+<label>
+  <input type="checkbox" name="snorkle" value="snorkle">
+    Snorkling Adventure
+</label><br><br>
+
+<label>
+  <input type="checkbox" name="rainforestHike" value="rainforestHike">
+    Rainforest Hike
+</label><br><br>
+
+<label>
+  <input type="checkbox" name="rainforestZipline" value="rainforestZipline">
+    Rainforest Zipline Adventure
+</label><br><br>
+
+<label>
+  <input type="checkbox" name="volcanoTour" value="volcanoTour">
+    Volcano Tour
+</label><br><br>
+
+<label>
+  <input type="checkbox" name="helicopterTour" value="helicopterTour">
+    Helicopter Tour
+</label><br><br>
+
+<label>
+  <input type="checkbox" name="charteredFishingTour" value="charteredFishingTour">
+    Chartered Fishing Tour
+</label><br><br>
+
+<label>
+  <input type="checkbox" name="busTour" value="busTour">
+    Bus Tour of Island
+</label><br><br>
+
+
+<h2 id="culture">Culture</h2>
+
+<label>
+  <input type="checkbox" name="localHistoryMuseum" value="localHistoryMuseum">
+    Tickets for Local History Museum
+</label><br><br>
+
+<label>
+  <input type="checkbox" name="artGalleries" value="artGalleries">
+    Reserve Tickets forArt Galleries
+</label><br><br>
+
+<h2 id="entertainment">Entertainment</h2>
+<label>
+  <input type="checkbox" name="movieTheatre" value="movieTheatre">
+    Movie Theatre Tickets
+</label><br><br>
+
+<h2 id="play">Play</h2>
+<label>
+  <input type="checkbox" name="arcade" value="arcade">
+    Ticket to Arcade
+</label><br><br>
+
+<label>
+  <input type="checkbox" name="bowling" value="bowling">
+    Bowling
+</label><br><br>
+
+<label>
+  <input type="checkbox" name="golf" value="golf">
+    Preorder your tickets now for the None-Hole Golf Course
+</label><br><br>
+
+
+
+
+
+<h2 id="nightlife">Nightlife</h2>
+<label>
+  <input type="checkbox" name="danceClub" value="danceClub">
+    Reservations for Dance Club
+</label><br><br>
+
+<label>
+  <input type="checkbox" name="pubs" value="pubs">
+    Reservations for Pubs and Microbreweries
+</label><br><br>
+
+
+
+
+
+
+
+
+
+<!--ACCOMMODATIONS ========================================================================================== -->
+
+            <h3 class="reservationTitle" id="reserveAccommodations">Reserve Accommodations:</h3>
+
+    <label id="hostel">
         <input type="radio" name="hotelType" value="hostel">
         Hostel
     </label><br>
 
-    <label>
+    <label id="familyHotel">
         <input type="radio" name="hotelType" value="Family-Owned Hotel">
         Family-Owned Hotel
     </label><br>
 
-    <label>
+    <label id="bedAndBreakfast">
         <input type="radio" name="hotelType" value="Bed-And-Breakfast">
         Bed and Breakfast
     </label><br>
     
-    <label>
+    <label id="fourStarResort">
         <input type="radio" name="hotelType" value="Four-Star Resort">
         Four-Star Resort
     </label><br>
     <br>
     <br>
+
+
+         <label for="numberOfAdults">Number of Adults:</label>
+                <input type="text" id="numberOfAdults" name="numberOfAdults"><br><br>
+
+                 <label for="numberOfChildren">Number of Children:</label>
+                <input type="text" id="numberOfChildren" name="numberOfChildren"><br><br>
 
     <p>Select Amenities:</p>
 
@@ -121,7 +227,7 @@
 </label><br><br>
 
 
-
+<!--EAT AND DRINK ========================================================================================== -->
 
 <h3 class="reservationTitle">Restaurant Reservations:</h3>
 <p>We would be happy to assist you with securing a reservation at one of our partner restaurants.</p>
@@ -131,20 +237,26 @@
     Restaurant Reservation
 </label><br><br>
 
+<!--TRANSPORTATION ========================================================================================== -->
 
-<h3 class="reservationTitle">Activities:</h3>
-<p>Choose one or many of our varied activities while you enjoy your stay!</p>
-
-<label>
-    <input type="checkbox" name="beachResort" value="beachResort">
-    Beach Resort
-</label><br><br>
+<h3 class="reservationTitle">Reserve Transportation:</h3>
+<p>We can assist you with travel by air or by cruise.<br>We would also be happy to help with local travel arrangements.</p>
 
 
 
 
+<!--CONTACT INFO========================================================================================== -->
+<h3 class="reservationTitle">Contact Information:</h3>
+<p>Please provide us with your contact details and one of our representatives will get back to you shortly:</p>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required><br><br>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required><br><br>
+
+<!--ENTER INFORMATION ========================================================================================== -->
                         <label for="message">Message:</label><br>
-                        <textarea id="message" name="message" rows="5" cols="40" required></textarea><br><br>
+                        <textarea id="message" name="message" rows="5" cols="40"></textarea><br><br>
 
                         <input type="submit" class="submit" value="Submit">
                     </form>
