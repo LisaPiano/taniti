@@ -228,7 +228,7 @@
 
 
 <!--EAT AND DRINK ========================================================================================== -->
-
+<h3 id="restaurant"></h3>
 <h3 class="reservationTitle">Restaurant Reservations:</h3>
 <p>We would be happy to assist you with securing a reservation at one of our partner restaurants.</p>
 
@@ -243,12 +243,12 @@
 <p>We can assist you with travel by air or by cruise.<br>We would also be happy to help with local travel arrangements.</p>
 <label>
     <input type="checkbox" name="transportation" value="transportation">
-    For help with Aiplane Reservation or to connect to the airport
+    AIRPLANE-For help with airplane reservations or to connect to the airport
 </label><br><br>
 
 <label>
     <input type="checkbox" name="transportation" value="transportation">
-    For help with making a reservation for a cruise ship or to connect to the cruise ship port
+    CRUISE-For help with making a reservation for a cruise ship or to connect to the cruise ship port
 </label><br><br>
 
 <label>
@@ -264,6 +264,11 @@
 <label>
     <input type="checkbox" name="transportation" value="transportation">
     Reserve a Rental Car
+</label><br><br>
+
+<label>
+    <input type="checkbox" name="transportation" value="transportation">
+    Reserve a Bike and Helmet (Helmets are required by Law)
 </label><br><br>
 
 <label>
@@ -284,7 +289,7 @@
                         <label for="message">Message:</label><br>
                         <textarea id="message" name="message" rows="5" cols="40"></textarea><br><br>
 
-                        <input type="submit" class="submit" value="Submit">
+                        <input type="submit" id="submit" class="submit" value="Submit">
                     </form>
     </div>
            

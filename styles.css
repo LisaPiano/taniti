@@ -19,7 +19,6 @@ li {
   display: flex;
   justify-content: space-between;
   align-items: flex-start; /* keeps the image and phone aligned at the top */
-  border: 3px solid red;
   padding: 7px;
 }
 
@@ -39,7 +38,6 @@ li {
     width: auto;         
     padding: 4px;        
     text-align: right;
-    border: 4px solid orange;
 }
 
 .figcaption {
@@ -390,6 +388,14 @@ margin: 0;
   display: flex;
   flex-direction: column;
 }
+
+.restaurantList {
+  border: 2px solid darkblue;
+  border-radius: 8px;
+  padding: 10px;
+  background-color: white;  
+  text-align: center;
+}
 /*Transportation page***************************************************/
 .gettingTo {
   display: flex;
@@ -428,6 +434,22 @@ margin: 0;
   color: white;
 }
 
+.transportTitle {
+  font-size: 3.5rem;
+  font-weight: bold;
+}
+
+.descriptiveTransportation {
+ border-left: 6px solid #4db6e2;
+ border-radius: 8px;
+transition: all 0.25s ease;
+}
+
+.descriptiveTransportation:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 14px rgba(0,0,0,0.15);
+  transition: 0.2s ease;
+}
 /*FAQ****************************************************/
 
 .listOfQuestions {
@@ -478,9 +500,15 @@ h3.question {
   background-color: orange;
   color: white;
   border: none;
-  padding: 10px 20px;
+  padding: 10px 2%;
   border-radius: 4px;
   cursor: pointer;
+  }
+
+  #submit {
+    align-self: center;
+    width: 100%;
+    border-radius: 8px;
   }
 
 .submit:hover {
