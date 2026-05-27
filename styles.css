@@ -5,6 +5,17 @@
   line-height: 1.6;
 }
 
+
+
+button {
+  background-color: darkblue;
+  color: white;
+  border: none;
+  cursor: pointer;
+  padding: 8px 12px;
+  border-radius: 4px;
+}
+
 body {
   background-color: lightblue;
 }
@@ -25,7 +36,6 @@ li {
 .icon {
   height: 5em;
   width: auto;
-  border: 4px solid black;
 } 
 
 .icon:hover {
@@ -162,6 +172,10 @@ img {
   border-radius: 8px;
 }
 
+.smallPic:hover {
+  transform: scale(1.05);
+  transition: transform 0.3s ease;
+}
 /* .smallPicActivity {
   width: 40%;
   height: auto;
@@ -173,7 +187,7 @@ img {
 header {
  margin-top: 10px;
  font-size: 15px;
- color: orange;
+ /* color: grey; */
  text-align: center;
 }
 
@@ -195,6 +209,7 @@ nav {
 
 #tel:hover {
     font-size: 1.1rem;
+    color: black;
 }
 
 /*The Lines in Mobile==========================================*/
@@ -240,12 +255,11 @@ nav {
 
 #active1 {
   color: orange;
-  font-size: 22px;
 }
 
 #active1:hover {
   color: white;
-  font-size: 20px;  
+  /* font-size: 20px;   */
 }
 
 /* end of nav++++++++++++++++++++++++++++++++++++++++++++ */
@@ -313,11 +327,10 @@ h1 {
   font-weight: 600;
   color: white;
   box-shadow: 0 2px 6px rgba(0,0,0,0.15);
-  border: 4px solid orange;
 }
 
 .textForPic:hover {
-  color: orange;
+  color: lightgra;
 }
 
 .smallContainer {
@@ -339,7 +352,6 @@ footer {
   justify-content: space-between;
   gap: 10px;
   margin-top: 30px;
-  border: 6px solid darkblue;
 }
 
 /*Activity List****************************************************/
@@ -479,10 +491,10 @@ h3.question {
   gap: 15px;
   max-width: 400px;
   margin: 20px auto;
-  border: solid 5px darkblue;
   padding: 20px;
   border-radius: 8px; 
   scroll-margin-top: 80px;
+  background-color: white;
 }
 
 .contact-form label {
@@ -563,13 +575,15 @@ h3.question {
   .nav-toggle {
     display: none;
   }
+.main-nav {
+   height: 73px;
+  }
 
   .nav-links {
     display: flex !important;
     flex-direction: row;
     justify-content: space-around;
     /* gap: 2rem; */
-    width: 100%;
     text-align: center;
   }
 
